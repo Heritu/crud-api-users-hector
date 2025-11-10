@@ -34,4 +34,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
+            -Dsonar.organization=Heritu
+            -Dsonar.projectKey=Heritu_crud-api-users-hector
             -Dsonar.qualitygate.wait=true
